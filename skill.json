@@ -1,0 +1,114 @@
+{
+  "name": "ordnet-web3-hosting",
+  "version": "1.1.0",
+  "description": "AI-agent skill for inscribing HTML content on the Bitcoin SV blockchain and registering .web3 domains.",
+  "author": "ORDnet.io",
+  "license": "MIT",
+  "homepage": "https://clawdbot.ordnet.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ordnet/clawdbot-skill"
+  },
+  "keywords": [
+    "openclaw",
+    "web3",
+    "blockchain",
+    "bsv",
+    "bitcoin-sv",
+    "hosting",
+    "inscription",
+    "decentralized",
+    "domains",
+    "ai-agent"
+  ],
+  "openclaw": {
+    "emoji": "🌐",
+    "category": "web3",
+    "invocable": true,
+    "requires_auth": false,
+    "rate_limit": "100/hour"
+  },
+  "services": {
+    "app": {
+      "url": "https://app.ordnet.io",
+      "description": "Main application for wallet and inscriptions"
+    },
+    "swap": {
+      "url": "https://swap.ordnet.io",
+      "description": "Exchange DOGE/LTC for BSV"
+    },
+    "domains": {
+      "url": "https://domains.ordnet.io",
+      "description": "Register .web3 domains"
+    },
+    "browser": {
+      "url": "https://browser.ordnet.io",
+      "description": "View .web3 websites (for humans, with UI)"
+    },
+    "ai": {
+      "url": "https://ai.ordnet.io",
+      "description": "Direct content access for AI agents",
+      "endpoints": {
+        "html_by_txid": "https://ai.ordnet.io/{txid}",
+        "html_by_domain": "https://ai.ordnet.io/{domain}.web3",
+        "raw_dedicated": "https://ai.ordnet.io/raw/{identifier}",
+        "raw_suffix": "https://ai.ordnet.io/{identifier}-raw",
+        "raw_query": "https://ai.ordnet.io/{identifier}?raw=1",
+        "whois": "https://ai.ordnet.io/whois/{domain}.web3"
+      },
+      "raw_methods": {
+        "recommended": "/raw/{identifier}",
+        "suffix": "/{identifier}-raw",
+        "query": "/{identifier}?raw=1"
+      }
+    },
+    "health": {
+      "url": "https://names.ordnet.io/health",
+      "description": "Service health check API"
+    }
+  },
+  "features": [
+    "Permanent blockchain storage",
+    "Censorship-resistant hosting",
+    "No recurring fees",
+    ".web3 domain registration",
+    "HTML/CSS/JS support",
+    "DOGE/LTC to BSV swap",
+    "Low cost (<$0.01 per inscription)",
+    "Multiple raw content access methods",
+    "WHOIS domain lookup"
+  ],
+  "pricing": {
+    "inscription": {
+      "unit": "per KB",
+      "cost_usd": 0.001,
+      "note": "Varies with network fees"
+    },
+    "domains": {
+      "premium_1_5_chars": 5.00,
+      "standard_6_9_chars": 1.00,
+      "free_10_plus_chars": 0.00
+    }
+  },
+  "files": {
+    "skill": "skill.md",
+    "heartbeat": "heartbeat.md",
+    "landing": "index.html"
+  },
+  "install": {
+    "path": "~/.openclaw/skills/ordnet/",
+    "commands": [
+      "mkdir -p ~/.openclaw/skills/ordnet",
+      "curl -s https://clawdbot.ordnet.io/skill.md > ~/.openclaw/skills/ordnet/SKILL.md",
+      "curl -s https://clawdbot.ordnet.io/heartbeat.md > ~/.openclaw/skills/ordnet/HEARTBEAT.md",
+      "curl -s https://clawdbot.ordnet.io/skill.json > ~/.openclaw/skills/ordnet/package.json"
+    ]
+  },
+  "support": {
+    "website": "https://ordnet.io",
+    "tutorial": "https://hello.ordnet.io",
+    "skill_page": "https://clawdbot.ordnet.io",
+    "twitter": "https://x.com/ORDNETio",
+    "telegram": "https://t.me/ORDNET.io"
+  }
+}

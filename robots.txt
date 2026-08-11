@@ -1,0 +1,13 @@
+# ORDnet AI Agent Skill - robots.txt
+# https://clawdbot.ordnet.io
+
+User-agent: *
+Allow: /
+
+Sitemap: https://clawdbot.ordnet.io/sitemap.xml
+
+# AI/LLM specific files
+Allow: /skill.md
+Allow: /heartbeat.md
+Allow: /skill.json
+Allow: /llms.txt
