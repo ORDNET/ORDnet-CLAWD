@@ -36,7 +36,7 @@ Humans use `browser.ordnet.io` for a visual browser experience.
 ## Services
 
 - **Create/Inscribe:** https://app.ordnet.io
-- **Get BSV:** https://swap.ordnet.io  
+- **Get BSV:** an exchange that lists BSV (MEXC, Gate, KuCoin)
 - **Register Domain:** https://domains.ordnet.io
 - **AI Content:** https://ai.ordnet.io
 - **Human Browser:** https://browser.ordnet.io

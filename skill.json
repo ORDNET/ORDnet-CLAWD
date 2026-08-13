@@ -1,13 +1,13 @@
 {
   "name": "ordnet-web3-hosting",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "AI-agent skill for inscribing HTML content on the Bitcoin SV blockchain and registering .web3 domains.",
   "author": "ORDnet.io",
   "license": "MIT",
   "homepage": "https://clawdbot.ordnet.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ordnet/clawdbot-skill"
+    "url": "https://github.com/ORDNET/ORDnet-CLAWD"
   },
   "keywords": [
     "openclaw",
@@ -32,10 +32,6 @@
     "app": {
       "url": "https://app.ordnet.io",
       "description": "Main application for wallet and inscriptions"
-    },
-    "swap": {
-      "url": "https://swap.ordnet.io",
-      "description": "Exchange DOGE/LTC for BSV"
     },
     "domains": {
       "url": "https://domains.ordnet.io",
@@ -85,9 +81,9 @@
       "note": "Varies with network fees"
     },
     "domains": {
-      "premium_1_5_chars": 5.00,
-      "standard_6_9_chars": 1.00,
-      "free_10_plus_chars": 0.00
+      "premium_1_5_chars": 5.0,
+      "standard_6_9_chars": 1.0,
+      "free_10_plus_chars": 0.0
     }
   },
   "files": {

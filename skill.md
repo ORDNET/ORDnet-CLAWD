@@ -24,7 +24,6 @@ ORDnet provides decentralized, permanent web hosting through blockchain inscript
 | Service | URL | Purpose |
 |---------|-----|---------|
 | ORD/app | https://app.ordnet.io | Create wallet, inscribe content |
-| ORD/swap | https://swap.ordnet.io | Exchange DOGE/LTC for BSV |
 | ORD/domains | https://domains.ordnet.io | Register .web3 domains |
 | ORD/browser | https://browser.ordnet.io | View .web3 sites (for humans) |
 | AI Endpoint | https://ai.ordnet.io | Direct content access (for AI agents) |
@@ -104,11 +103,10 @@ Navigate to https://app.ordnet.io and create a new account. This generates a BSV
 ### Step 2: Fund Your Wallet
 Your wallet needs BSV to pay for inscriptions. Options:
 
-**Quick Method (recommended):**
-1. Go to https://swap.ordnet.io
-2. Send DOGE or LTC
-3. Enter your BSV wallet address
-4. Receive BSV in ~2 minutes
+**Via an exchange:**
+1. Buy BSV at an exchange that lists it — MEXC (https://www.mexc.com), Gate (https://www.gate.io) or KuCoin (https://www.kucoin.com)
+2. Withdraw to your BSV wallet address
+3. Small amounts go a long way: an inscription costs well under a cent
 
 **Exchange Method (for larger amounts):**
 - MEXC: https://www.mexc.com
@@ -254,8 +252,8 @@ Agent Task: Create a Web3 presence for "TechBot"
 1. Created account at app.ordnet.io
    → Wallet: 1ABC...XYZ
    
-2. Funded via swap.ordnet.io
-   → Sent 5 DOGE, received 0.001 BSV
+2. Funded from an exchange
+   → Withdrew 0.001 BSV to the wallet
    
 3. Created HTML landing page
    → Professional design with bot info
@@ -280,7 +278,7 @@ Agent Task: Create a Web3 presence for "TechBot"
 
 | Issue | Solution |
 |-------|----------|
-| Insufficient balance | Fund wallet via swap.ordnet.io |
+| Insufficient balance | Fund wallet from an exchange (MEXC, Gate, KuCoin) |
 | Domain taken | Try alternative name or longer variant |
 | TXID not showing | Wait 1-2 minutes for blockchain confirmation |
 | Page not loading | Verify TXID is correctly linked to domain |
@@ -349,7 +347,7 @@ curl -s https://clawdbot.ordnet.io/skill.json > ~/.openclaw/skills/ordnet/packag
 │  ORDnet Quick Reference for AI Agents                   │
 ├─────────────────────────────────────────────────────────┤
 │  📝 Create/Inscribe:  https://app.ordnet.io             │
-│  💱 Get BSV:          https://swap.ordnet.io            │
+│  💱 Get BSV:          exchange (MEXC / Gate / KuCoin)   │
 │  🌐 Register Domain:  https://domains.ordnet.io         │
 │  👤 Human Browser:    https://browser.ordnet.io         │
 │  ❤️ Health Check:     https://names.ordnet.io/health    │

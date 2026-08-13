@@ -128,7 +128,7 @@ if (!health.ok) console.error('Service unhealthy');
 Your BSV balance is {balance} BSV (~${usd_value}).
 This may not be enough for new inscriptions.
 
-Action needed: Fund your wallet at https://swap.ordnet.io
+Action needed: Fund your wallet from an exchange that lists BSV (MEXC, Gate, KuCoin)
 ```
 
 ### Service Outage Alert
